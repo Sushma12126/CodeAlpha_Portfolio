@@ -14,11 +14,12 @@ header p{margin-top:6px}
 .btn{display:inline-block;margin:15px 8px 0;padding:12px 22px;background:#fff;color:#000;text-decoration:none;border-radius:25px;font-weight:bold}
 section{max-width:900px;margin:auto;padding:40px 20px}
 h2{font-size:26px;margin-bottom:15px;color:#feca57}
+h3{font-size:20px;margin:25px 0 12px}
 .skills{display:flex;gap:10px;flex-wrap:wrap}
 .skills span{background:#22223a;padding:9px 16px;border-radius:20px}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .card{background:#1a1a2e;padding:20px;border-radius:15px}
-.card h3{margin-bottom:8px}
+.card h3{margin-bottom:8px;margin-top:0}
 .card p{color:#aaa;font-size:14px;margin-bottom:12px}
 .card a{color:#48dbfb;text-decoration:none;font-weight:bold}
 .design-box{height:160px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:40px;margin-bottom:12px}
@@ -29,126 +30,3 @@ h2{font-size:26px;margin-bottom:15px;color:#feca57}
 .dream{background:linear-gradient(135deg,#ff6b6b,#feca57);color:#000;padding:25px;border-radius:15px;text-align:center;font-weight:bold}
 .contact{text-align:center;background:#1a1a2e;border-radius:15px;padding:30px}
 footer{text-align:center;padding:20px;color:#888;font-size:14px}
-/* Calculator */
-.calc{background:#1a1a2e;padding:20px;border-radius:15px;max-width:320px;margin:auto}
-.calc input{width:100%;padding:15px;font-size:22px;text-align:right;border:none;border-radius:10px;margin-bottom:12px;background:#0f0f1a;color:#fff}
-.calc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.calc-grid button{padding:15px;font-size:18px;border:none;border-radius:10px;background:#22223a;color:#fff;cursor:pointer}
-.calc-grid button.op{background:#feca57;color:#000;font-weight:bold}
-.calc-grid button.eq{background:#ff6b6b;color:#fff;font-weight:bold}
-/* Gallery */
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px}
-@media(max-width:600px){.cards,.gallery{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<header>
-<img src="https://github.com/Sushma12126.png" alt="Sushma">
-<h1>Sushma Creates ✨</h1>
-<p>Web Developer | Designer | Creator</p>
-<a class="btn" href="#projects">View My Work</a>
-<a class="btn" href="#calculator">Calculator</a>
-<a class="btn" href="#gallery">Gallery</a>
-</header>
-
-<section>
-<h2>About Me 💖</h2>
-<p>Hi! I'm Sushma. I love creating beautiful websites and learning new things. Welcome to my portfolio!</p>
-</section>
-
-<section>
-<h2>My Skills</h2>
-<div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span><span>Design</span><span>Canva</span></div>
-</section>
-
-<section id="projects">
-<h2>My Projects 🚀</h2>
-<div class="cards">
-<div class="card"><h3>🌸 Portfolio Website</h3><p>My personal portfolio website made with HTML & CSS.</p><a href="#">View Project →</a></div>
-<div class="card"><h3>🧮 Calculator App</h3><p>My own calculator made with JavaScript. Try below!</p><a href="#calculator">Try Calculator →</a></div>
-<div class="card"><h3>🖼️ Image Gallery</h3><p>Beautiful image gallery with my favourite photos.</p><a href="#gallery">View Gallery →</a></div>
-<div class="card"><h3>📱 Sushma Creates App</h3><p>My installable portfolio app.</p><a href="#">View Project →</a></div>
-</div>
-</section>
-
-<section id="calculator">
-<h2>My Calculator 🧮</h2>
-<p style="text-align:center;margin-bottom:15px;color:#aaa">Try it! Click numbers</p>
-<div class="calc">
-<input id="display" readonly value="0">
-<div class="calc-grid">
-<button onclick="clearCalc()">C</button>
-<button onclick="addVal('(')">(</button>
-<button onclick="addVal(')')">)</button>
-<button class="op" onclick="addVal('/')">÷</button>
-<button onclick="addVal('7')">7</button>
-<button onclick="addVal('8')">8</button>
-<button onclick="addVal('9')">9</button>
-<button class="op" onclick="addVal('*')">×</button>
-<button onclick="addVal('4')">4</button>
-<button onclick="addVal('5')">5</button>
-<button onclick="addVal('6')">6</button>
-<button class="op" onclick="addVal('-')">-</button>
-<button onclick="addVal('1')">1</button>
-<button onclick="addVal('2')">2</button>
-<button onclick="addVal('3')">3</button>
-<button class="op" onclick="addVal('+')">+</button>
-<button onclick="addVal('0')">0</button>
-<button onclick="addVal('.')">.</button>
-<button onclick="back()">⌫</button>
-<button class="eq" onclick="calc()">=</button>
-</div>
-</div>
-</section>
-
-<section id="gallery">
-<h2>My Image Gallery 🖼️</h2>
-<p style="margin-bottom:15px;color:#aaa">My favourite beautiful images</p>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600" alt="Girl">
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600" alt="Girl 2">
-<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600" alt="Girl 3">
-<img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Nature">
-<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600" alt="Nature 2">
-<img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=600" alt="Man">
-</div>
-</section>
-
-<section id="designs">
-<h2>My Designs 🎨</h2>
-<div class="cards">
-<div class="card"><div class="design-box d1">🌸</div><h3>Pink Aesthetic Design</h3><p>Soft pink & cute design for girls.</p><a href="#">View Design →</a></div>
-<div class="card"><div class="design-box d2">💜</div><h3>Purple Dream Design</h3><p>Dreamy purple gradient design.</p><a href="#">View Design →</a></div>
-<div class="card"><div class="design-box d3">🌿</div><h3>Fresh Green Design</h3><p>Fresh & clean nature design.</p><a href="#">View Design →</a></div>
-<div class="card"><div class="design-box d4">🍑</div><h3>Peach Love Design</h3><p>Warm peach & lovely design.</p><a href="#">View Design →</a></div>
-</div>
-</section>
-
-<section>
-<div class="dream">
-<h2 style="color:#000">My Dream ✨</h2>
-<p style="margin-top:10px">One day I want to become a great Web Developer and create amazing websites for everyone!</p>
-</div>
-</section>
-
-<section id="contact">
-<div class="contact">
-<h2>Contact Me 📩</h2>
-<p style="margin:15px 0">Let's work together!</p>
-<a class="btn" href="https://github.com/Sushma12126">GitHub</a>
-<a class="btn" href="https://instagram.com/">Instagram</a>
-<a class="btn" href="https://wa.me/919999999999">WhatsApp</a>
-</div>
-</section>
-<footer><p>Made with ❤️ by Sushma Creates</p></footer>
-
-<script>
-let disp=document.getElementById('display');
-function addVal(v){ if(disp.value=='0' && v!='.') disp.value=''; disp.value+=v; }
-function clearCalc(){ disp.value='0'; }
-function back(){ disp.value=disp.value.slice(0,-1)||'0'; }
-function calc(){ try{ disp.value=eval(disp.value); }catch(e){ disp.value='Error'; } }
-</script>
-</body>
-</html>
