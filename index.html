@@ -13,4 +13,123 @@ header h1{font-size:32px;margin-top:10px}
 .btn{display:inline-block;margin:12px 5px 0;padding:10px 18px;background:#fff;color:#000;text-decoration:none;border-radius:20px;font-weight:bold}
 section{max-width:900px;margin:auto;padding:30px 15px}
 h2{color:#feca57;margin-bottom:12px}
-.skills{display:flex;
+.skills span{background:#22223a;padding:8px 14px;border-radius:20px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.card{background:#1a1a2e;padding:15px;border-radius:12px}
+.card p{color:#aaa;font-size:13px;margin:6px 0}
+.calc{background:#1a1a2e;padding:15px;border-radius:12px;max-width:300px;margin:auto}
+.calc input{width:100%;padding:12px;font-size:20px;text-align:right;border:none;border-radius:8px;margin-bottom:10px;background:#0f0f1a;color:#fff}
+.calc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.calc-grid button{padding:13px;font-size:16px;border:none;border-radius:8px;background:#22223a;color:#fff}
+.calc-grid button.op{background:#feca57;color:#000}
+.calc-grid button.eq{background:#ff6b6b}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gallery img{width:100%;height:150px;object-fit:cover;border-radius:10px}
+.cat{background:#1a1a2e;padding:10px 12px;border-radius:10px;margin:20px 0 10px}
+.dream{background:linear-gradient(135deg,#ff6b6b,#feca57);color:#000;padding:20px;border-radius:12px;text-align:center}
+.contact{text-align:center;background:#1a1a2e;border-radius:12px;padding:25px}
+footer{text-align:center;padding:15px;color:#888;font-size:13px}
+@media(max-width:600px){.cards,.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<img src="https://github.com/Sushma12126.png">
+<h1>Sushma Creates ✨</h1>
+<p>Web Developer | Designer | Creator</p>
+<a class="btn" href="#calculator">Calculator</a>
+<a class="btn" href="#gallery">Gallery</a>
+</header>
+<section>
+<h2>About Me 💖</h2>
+<p>Hi! I'm Sushma. I love creating beautiful websites!</p>
+</section>
+<section>
+<h2>My Skills</h2>
+<div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span><span>Design</span></div>
+</section>
+<section>
+<h2>My Projects 🚀</h2>
+<div class="cards">
+<div class="card"><h3>🌸 Portfolio</h3><p>My personal website.</p></div>
+<div class="card"><h3>🧮 Calculator</h3><p>My calculator. Try below!</p></div>
+<div class="card"><h3>🖼️ Gallery</h3><p>Nature, Fruits, Animals.</p></div>
+<div class="card"><h3>📱 App</h3><p>My portfolio app.</p></div>
+</div>
+</section>
+<section id="calculator">
+<h2>My Calculator 🧮</h2>
+<div class="calc">
+<input id="display" readonly value="0">
+<div class="calc-grid">
+<button onclick="clearCalc()">C</button>
+<button onclick="addVal('(')">(</button>
+<button onclick="addVal(')')">)</button>
+<button class="op" onclick="addVal('/')">÷</button>
+<button onclick="addVal('7')">7</button>
+<button onclick="addVal('8')">8</button>
+<button onclick="addVal('9')">9</button>
+<button class="op" onclick="addVal('*')">×</button>
+<button onclick="addVal('4')">4</button>
+<button onclick="addVal('5')">5</button>
+<button onclick="addVal('6')">6</button>
+<button class="op" onclick="addVal('-')">-</button>
+<button onclick="addVal('1')">1</button>
+<button onclick="addVal('2')">2</button>
+<button onclick="addVal('3')">3</button>
+<button class="op" onclick="addVal('+')">+</button>
+<button onclick="addVal('0')">0</button>
+<button onclick="addVal('.')">.</button>
+<button onclick="back()">⌫</button>
+<button class="eq" onclick="calc()">=</button>
+</div>
+</div>
+</section>
+<section id="gallery">
+<h2>My Gallery 🖼️</h2>
+<div class="cat"><h3>🌿 Nature</h3></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600">
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600">
+<img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600">
+</div>
+<div class="cat"><h3>🍓 Fruits</h3></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600">
+<img src="https://images.unsplash.com/photo-1581375074612-d1fd0e661aeb?w=600">
+<img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=600">
+<img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=600">
+</div>
+<div class="cat"><h3>🐶 Animals</h3></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600">
+<img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600">
+<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600">
+<img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=600">
+</div>
+</section>
+<section>
+<div class="dream">
+<h2 style="color:#000">My Dream ✨</h2>
+<p>One day I want to become a great Web Developer!</p>
+</div>
+</section>
+<section>
+<div class="contact">
+<h2>Contact Me 📩</h2>
+<a class="btn" href="https://github.com/Sushma12126">GitHub</a>
+<a class="btn" href="https://instagram.com/">Instagram</a>
+<a class="btn" href="https://wa.me/919999999999">WhatsApp</a>
+</div>
+</section>
+<footer>Made with ❤️ by Sushma Creates</footer>
+<script>
+let disp=document.getElementById('display');
+function addVal(v){if(disp.value=='0'&&v!='.')disp.value='';disp.value+=v}
+function clearCalc(){disp.value='0'}
+function back(){disp.value=disp.value.slice(0,-1)||'0'}
+function calc(){try{disp.value=eval(disp.value)}catch(e){disp.value='Error'}}
+</script>
+</body>
+</html>
