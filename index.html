@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sushma Creates</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#0f0f1a;color:#fff}
+header{padding:60px 20px;text-align:center;background:linear-gradient(135deg,#ff6b6b,#feca57,#ff6b6b)}
+header img{width:130px;height:130px;border-radius:50%;border:4px solid white;object-fit:cover}
+header h1{font-size:38px;margin-top:12px}
+header p{margin-top:6px}
+.btn{display:inline-block;margin:15px 8px 0;padding:12px 22px;background:#fff;color:#000;text-decoration:none;border-radius:25px;font-weight:bold}
+section{max-width:900px;margin:auto;padding:40px 20px}
+h2{font-size:26px;margin-bottom:15px;color:#feca57}
+.skills{display:flex;gap:10px;flex-wrap:wrap}
+.skills span{background:#22223a;padding:9px 16px;border-radius:20px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:#1a1a2e;padding:20px;border-radius:15px}
+.card h3{margin-bottom:8px}
+.card p{color:#aaa;font-size:14px;margin-bottom:12px}
+.card a{color:#48dbfb;text-decoration:none;font-weight:bold}
+.design-box{height:160px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:40px;margin-bottom:12px}
+.d1{background:linear-gradient(135deg,#ff9a9e,#fecfef)}
+.d2{background:linear-gradient(135deg,#a18cd1,#fbc2eb)}
+.d3{background:linear-gradient(135deg,#84fab0,#8fd3f4)}
+.d4{background:linear-gradient(135deg,#ffecd2,#fcb69f)}
+.dream{background:linear-gradient(135deg,#ff6b6b,#feca57);color:#000;padding:25px;border-radius:15px;text-align:center;font-weight:bold}
+.contact{text-align:center;background:#1a1a2e;border-radius:15px;padding:30px}
+footer{text-align:center;padding:20px;color:#888;font-size:14px}
+@media(max-width:600px){.cards{grid-template-columns:1fr}}
+</style>
 </head>
-<body style="background:pink;text-align:center;padding:50px">
+<body>
+<header>
+<img src="https://github.com/Sushma12126.png" alt="Sushma">
 <h1>Sushma Creates ✨</h1>
-<p>Hi! I'm Sushma</p>
-<p>My Designs 🎨</p>
-<p>Test working!</p>
+<p>Web Developer | Designer | Creator</p>
+<a class="btn" href="#projects">View My Work</a>
+<a class="btn" href="#designs">My Designs</a>
+</header>
+<section>
+<h2>About Me 💖</h2>
+<p>Hi! I'm Sushma. I love creating beautiful websites and learning new things. Welcome to my portfolio!</p>
+</section>
+<section>
+<h2>My Skills</h2>
+<div class="skills">
+<span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span><span>Design</span><span>Canva</span>
+</div>
+</section>
+<section id="projects">
+<h2>My Projects 🚀</h2>
+<div class="cards">
+<div class="card"><h3>🌸 Portfolio Website</h3><p>My personal portfolio website made with HTML & CSS.</p><a href="#">View Project →</a></div>
+<div class="card"><h3>📱 Sushma Creates App</h3><p>My installable portfolio app.</p><a href="#">View Project →</a></div>
+</div>
+</section>
+<section id="designs">
+<h2>My Designs 🎨</h2>
+<div class="cards">
+<div class="card"><div class="design-box d1">🌸</div><h3>Pink Aesthetic Design</h3><p>Soft pink & cute design for girls.</p><a href="#">View Design →</a></div>
+<div class="card"><div class="design-box d2">💜</div><h3>Purple Dream Design</h3><p>Dreamy purple gradient design.</p><a href="#">View Design →</a></div>
+<div class="card"><div class="design-box d3">🌿</div><h3>Fresh Green Design</h3><p>Fresh & clean nature design.</p><a href="#">View Design →</a></div>
+<div class="card"><div class="design-box d4">🍑</div><h3>Peach Love Design</h3><p>Warm peach & lovely design.</p><a href="#">View Design →</a></div>
+</div>
+</section>
+<section>
+<div class="dream">
+<h2 style="color:#000">My Dream ✨</h2>
+<p style="margin-top:10px">One day I want to become a great Web Developer and create amazing websites for everyone!</p>
+</div>
+</section>
+<section id="contact">
+<div class="contact">
+<h2>Contact Me 📩</h2>
+<p style="margin:15px 0">Let's work together!</p>
+<a class="btn" href="https://github.com/Sushma12126">GitHub</a>
+<a class="btn" href="https://instagram.com/">Instagram</a>
+<a class="btn" href="https://wa.me/919999999999">WhatsApp</a>
+</div>
+</section>
+<footer><p>Made with ❤️ by Sushma Creates</p></footer>
 </body>
 </html>
